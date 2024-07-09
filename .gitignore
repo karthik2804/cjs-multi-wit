@@ -1,0 +1,7 @@
+node_modules
+dist
+target
+.spin/
+dist.js
+componentizejs.json
+combined_wit/

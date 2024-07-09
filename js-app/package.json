@@ -1,0 +1,24 @@
+{
+    "name": "test-json",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx webpack --mode=production && npx mkdirp target && npx j2w -i dist.js -d combined_wit -n combined -o target/test-json.wasm",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "mkdirp": "^3.0.1",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.8.4",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+        "@fermyon/spin-sdk": "https://github.com/karthik2804/spin-js-sdk#configure_componentizejs",
+        "@fermyon/wasi-ext": "https://github.com/karthik2804/js-wasi-ext#configure_componentizejs"
+    }
+}

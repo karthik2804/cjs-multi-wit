@@ -1,0 +1,11 @@
+[package]
+name = "knitwit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "3.2.24", features = ["derive", "env"] }
+wasm-tools = "1.212.0"
+wit-component = "0.212.0"
+wit-parser = "0.212.0"
